@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt-get install -y zip unzip sed
+    apt-get install -y zip unzip
   SHELL
 
   config.vm.provision "shell", privileged: false, inline: "curl -s http://get.sdkman.io | bash"
